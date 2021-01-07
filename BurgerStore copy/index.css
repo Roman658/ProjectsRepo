@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    background-image: url("https://raw.githubusercontent.com/Roman658/Git-Server/master/images/burger-151421.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 70%;
+}
+.product {
+    transition-duration: 0.6s;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 200px;
+    background-color: rgba(255, 127, 80, 0.8);
+    border-radius: 8px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product:hover {
+    transform: scale(1.2);
+}
+main {
+    max-width: 100%;
+    min-width: 1140px;
+    height: 100%;
+    margin-top: 30px;
+
+}
+.headerBlock {
+    position: relative;
+    height: 50px;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0;
+    transition-duration: 2s;
+}
+.headerBlock__searchLine {
+    width: 400px;
+    height: 27px;
+    margin-left: 40px;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    opacity: 0;
+}
+.headerBlock__blockBasket {
+    position: relative;
+}
+.headerBlock__blockBasket__bottomBlock {
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    width: 250px;
+    padding: 15px;
+    background: darkorange;
+    position: absolute;
+    border-radius: 10px;
+    top: 40px;
+    right: 1px;
+    z-index: 10;
+    opacity: 0;
+}
+
+
+.headerBlock__blockBasket__bottomBlock__decorArrow {
+    width: 15px;
+    height: 15px;
+    background-color: darkorange;
+    position: absolute;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    transform: rotate(45deg);
+    top: 32px;
+    left: 30px;
+    z-index: 20;
+    opacity: 0;
+}
+.headerBlock__blockBasket__counter {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+    border: 2px solid black;
+    background-color: azure;
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+.headerBlock__blockBasket__button {
+    transition-duration: 0.2s;
+    margin-right:  90px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: maroon;
+    outline: none;
+    border: none;
+    text-align: center;
+    color: azure;
+    cursor: pointer;
+    opacity: 0;
+}
+.headerBlock__basket:hover, .sortFromSmallestButton:hover, .sortFromBiggerButton:hover {
+    background-color: brown;
+}
+
+.sortFromSmallestButton, .sortFromBiggerButton {
+    padding: 5px;
+    background-color: maroon;
+    color: azure;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.sortFromSmallestButton:focus, .sortFromBiggerButton:focus {
+    background-color: crimson;
+}
+.sortFromBiggerButton {
+    opacity: 0;
+}
+.product__cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 230px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.product__imageCart {
+    width: 90px;
+    height: 80px;
+}
+.product__cart__delButton {
+    cursor: pointer;
+    outline: none;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__image {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 125px;
+    object-fit: cover;
+    object-position: center;
+}
+.product__price {
+    margin-top: 5px;
+}
+
+.product__button {
+    padding-left: 5px;
+    padding-right: 5px;
+    outline: none;
+    margin-top: 5px;
+    background-color: crimson;
+    border: 1px solid black;
+    min-width: 70px;
+    max-width: 140px;
+    height: 25px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.product__button:hover {
+    background-color: sandybrown;
+}
+
+footer {
+    max-width: 100%;
+    min-width: 1140px;
+    height: 75px;
+    background-color: darkorange;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.invisible {
+    display: none;
+}
+.invisible2 {
+    visibility: hidden;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>BurgerStore</title>
+    <link rel="stylesheet" href="index.css" >
+    <script src="index.js" defer></script>
+    <script src="animate.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animate.css/animate.css">
+</head>
+<body>
+<header>
+    <div class="headerBlock container">
+        <input class="headerBlock__searchLine" type="text" placeholder="Search product">
+        <button tabindex="0" class="sortFromSmallestButton"  >Sort from smallest price</button>
+        <button class="sortFromBiggerButton" tabindex="0">Sort from bigger price</button>
+        <div class="headerBlock__blockBasket">
+            <div id = "counter" class="animate__animated"></div>
+            <div  id = "topButt3" class="headerBlock__blockBasket__button" >Shopping Cart</div>
+            <div class="headerBlock__blockBasket__bottomBlock__decorArrow invisible"></div>
+            <div class="headerBlock__blockBasket__bottomBlock invisible">
+                <p class="headerBlock__blockBasket__bottomBlock__totalPrice">Total price 0</p>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="products container animate__animated"></div>
+</main>
+<footer>
+    <p>&copy; All rights reserved</p>
+</footer>
+</body>
+</html>
